@@ -1,0 +1,19 @@
+{
+  // Configuración de markdownlint para el repositorio.
+  "config": {
+    "default": true,
+    // Líneas largas: la prosa en español y las tablas no se cortan.
+    "MD013": false,
+    // El front matter tiene "title"; las lecciones también tienen un H1.
+    "MD025": { "front_matter_title": "" },
+    // Permite "!" y "?" al final de títulos (p. ej., "Nice to meet you!").
+    "MD026": { "punctuation": ".,;:" },
+    // Encabezados repetidos solo se permiten en secciones distintas.
+    "MD024": { "siblings_only": true },
+    // HTML permitido: <br> se usa dentro de tablas generadas.
+    "MD033": { "allowed_elements": ["br", "details", "summary"] }
+  },
+  "globs": ["**/*.md"],
+  // La plantilla contiene marcadores {{...}} que solo son válidos tras "lessons.py new".
+  "ignores": ["node_modules/**", ".venv/**", "templates/lesson-template.md"]
+}

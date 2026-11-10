@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node (markdownlint local)
+node_modules/
+
+# Editores y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Datos personales de aprendices: nunca en el repositorio
+bitacoras/
+grabaciones/
+*.private.md

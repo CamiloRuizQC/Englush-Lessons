@@ -1,0 +1,231 @@
+# Alcance y secuencia (scope & sequence) del repositorio.
+#
+# Fuente única de verdad del currículo. El validador (tools/lessons.py) verifica que:
+#   - cada lección pertenezca a un track, nivel y unidad declarados aquí;
+#   - todos los códigos de `l1_focus` existan en docs/01-interferencias-l1.md.
+# El índice lessons/INDEX.md se genera a partir de este archivo.
+#
+# Convenciones:
+#   - `title` de la unidad en inglés (es lo que ve el aprendiz).
+#   - `speaking_goal` en español, en formato "Puedo..." (descriptor can-do).
+#   - Agregar unidades al final de cada nivel; no renumerar unidades con lecciones existentes.
+
+version: 1
+
+tracks:
+  GEN:
+    slug: general
+    name: Inglés general comunicativo
+    description: >-
+      Ruta principal A1–B2 centrada en la interacción oral cotidiana y laboral
+      para hispanohablantes latinoamericanos.
+    levels:
+      A1:
+        guided_hours: "~90–100 h acumuladas (orientativo)"
+        focus: Interacción básica y sobrevivencia; sonidos y ritmo esenciales.
+        units:
+          - unit: 1
+            title: Nice to meet you
+            speaking_goal: Puedo saludar, presentarme, deletrear mi nombre y pedir datos personales básicos.
+            functions: [greeting, introducing yourself, asking for personal information, spelling]
+            grammar: [verb be, wh- questions with be, a/an + jobs]
+            l1_focus: [GRAM-01, GRAM-02, GRAM-06, PRON-05, PRON-11, PRON-24, PRAG-05]
+          - unit: 2
+            title: My people
+            speaking_goal: Puedo hablar de mi familia y amigos y describir a una persona de forma sencilla.
+            functions: [describing people, talking about family]
+            grammar: [have/has, possessive 's, his/her, adjectives before nouns]
+            l1_focus: [GRAM-05, GRAM-12, GRAM-13, PRON-08, PRON-14, VOC-23]
+          - unit: 3
+            title: A day in my life
+            speaking_goal: Puedo describir mi rutina diaria y preguntar por la de otra persona.
+            functions: [describing routines, telling the time]
+            grammar: [present simple, adverbs of frequency, do/does questions]
+            l1_focus: [GRAM-03, GRAM-04, GRAM-15, GRAM-18, PRON-14, PRON-16]
+          - unit: 4
+            title: Food and ordering
+            speaking_goal: Puedo pedir comida y bebida y hacer peticiones corteses en un restaurante o tienda.
+            functions: [ordering, making polite requests, thanking]
+            grammar: ["can/could I have...?", countable and uncountable nouns, some/any]
+            l1_focus: [GRAM-07, PRAG-01, PRAG-09, PRON-01, PRON-02]
+          - unit: 5
+            title: Where I live
+            speaking_goal: Puedo describir mi casa y mi ciudad, y pedir y dar indicaciones sencillas.
+            functions: [describing places, asking for and giving directions]
+            grammar: [there is/are, prepositions of place, imperatives]
+            l1_focus: [GRAM-19, PRON-06, PRON-17, PRON-22]
+          - unit: 6
+            title: Free time and abilities
+            speaking_goal: Puedo hablar de mis gustos, pasatiempos y habilidades.
+            functions: [talking about likes, talking about abilities]
+            grammar: [like/love/hate + -ing, can/can't for ability]
+            l1_focus: [GRAM-10, PRON-07, PRON-15, PRON-20]
+      A2:
+        guided_hours: "~180–200 h acumuladas (orientativo)"
+        focus: Narrar y planear en situaciones conocidas; terminaciones y entonación.
+        units:
+          - unit: 1
+            title: Life stories
+            speaking_goal: Puedo contar datos básicos de mi vida y de la de otras personas (nacimiento, estudios, trabajos).
+            functions: [talking about life events, dates]
+            grammar: [was/were, be born, past simple regular]
+            l1_focus: [GRAM-20, PRON-13, PRON-18, VOC-28]
+          - unit: 2
+            title: Shopping and services
+            speaking_goal: Puedo comparar productos, preguntar precios y resolver un problema sencillo de compra.
+            functions: [comparing, asking about prices, complaining politely]
+            grammar: [comparatives and superlatives, too/enough]
+            l1_focus: [GRAM-17, PRAG-01, PRON-18, VOC-14]
+          - unit: 3
+            title: Last weekend
+            speaking_goal: Puedo contar lo que hice en el pasado reciente y hacer preguntas de seguimiento.
+            functions: [narrating past events, asking follow-up questions, reacting]
+            grammar: [past simple regular and irregular, did questions, time expressions]
+            l1_focus: [GRAM-03, PRON-12, PRON-13, VOC-05, VOC-15]
+          - unit: 4
+            title: Plans and invitations
+            speaking_goal: Puedo hacer planes, invitar y aceptar o rechazar invitaciones con cortesía.
+            functions: [making plans, inviting, accepting and declining]
+            grammar: [going to, present continuous for future]
+            l1_focus: [GRAM-14, PRAG-06, PRON-10, PRON-21]
+          - unit: 5
+            title: Health and wellbeing
+            speaking_goal: Puedo describir síntomas sencillos y entender y dar consejos básicos de salud.
+            functions: [describing symptoms, giving advice]
+            grammar: [should/shouldn't, have + illness]
+            l1_focus: [GRAM-02, PRON-04, PRON-17, VOC-10]
+          - unit: 6
+            title: Travel and getting around
+            speaking_goal: Puedo resolver situaciones de viaje (aeropuerto, hotel, transporte) y pedir ayuda.
+            functions: [checking in, asking for help, solving travel problems]
+            grammar: [polite requests, verbs + prepositions]
+            l1_focus: [GRAM-09, PRAG-01, PRON-21, VOC-18]
+      B1:
+        guided_hours: "~350–400 h acumuladas (orientativo)"
+        focus: Conversación sostenida en el trabajo y la vida social; acento de palabra y fluidez.
+        units:
+          - unit: 1
+            title: Work and experience
+            speaking_goal: Puedo hablar de mi trabajo, mi formación y mi experiencia profesional en una conversación de networking o entrevista.
+            functions: [talking about your job, describing experience, networking]
+            grammar: [present perfect with for/since, "how long...?"]
+            l1_focus: [GRAM-08, VOC-01, VOC-06, VOC-33, PRON-18, PRAG-02, PRAG-07]
+          - unit: 2
+            title: Telling stories
+            speaking_goal: Puedo contar una anécdota con secuencia clara y reaccionar a las historias de otros.
+            functions: [narrating, reacting, showing interest]
+            grammar: [past continuous, narrative tenses, sequencers]
+            l1_focus: [GRAM-12, PRAG-03, PRON-13, PRON-21, VOC-02]
+          - unit: 3
+            title: Opinions and discussions
+            speaking_goal: Puedo dar mi opinión, justificarla y estar en desacuerdo con cortesía.
+            functions: [giving opinions, agreeing and disagreeing]
+            grammar: [opinion phrases, linkers of contrast]
+            l1_focus: [GRAM-06, PRAG-06, PRON-19, VOC-19]
+          - unit: 4
+            title: Problems and solutions
+            speaking_goal: Puedo explicar un problema, proponer soluciones y negociar una salida sencilla.
+            functions: [explaining problems, suggesting, making requests]
+            grammar: [first conditional, modal verbs for advice and obligation]
+            l1_focus: [GRAM-16, PRAG-01, PRON-20, VOC-04]
+          - unit: 5
+            title: Phone calls and online meetings
+            speaking_goal: Puedo manejar llamadas y videollamadas, pedir aclaraciones y deletrear datos.
+            functions: [making calls, clarifying, spelling and numbers]
+            grammar: [indirect questions, "can/could you...?"]
+            l1_focus: [PRAG-08, PRON-01, PRON-17, PRON-24]
+          - unit: 6
+            title: Changes and the future
+            speaking_goal: Puedo hacer predicciones y hablar de planes y metas personales y profesionales.
+            functions: [predicting, talking about goals]
+            grammar: [will/might/may, second conditional (introducción)]
+            l1_focus: [GRAM-14, GRAM-16, PRON-03, VOC-26]
+      B2:
+        guided_hours: "~500–600 h acumuladas (orientativo)"
+        focus: Discurso extendido, persuasión y matices; ritmo, acento contrastivo y entonación.
+        units:
+          - unit: 1
+            title: Giving short presentations
+            speaking_goal: Puedo hacer una presentación breve y estructurada y responder preguntas del público.
+            functions: [signposting, presenting data, handling questions]
+            grammar: [signposting language, passive for data]
+            l1_focus: [PRAG-02, PRON-18, PRON-19, PRON-20]
+          - unit: 2
+            title: Negotiating and persuading
+            speaking_goal: Puedo negociar condiciones y persuadir con argumentos y concesiones.
+            functions: [negotiating, persuading, making concessions]
+            grammar: [conditionals for bargaining, modals of possibility]
+            l1_focus: [GRAM-16, PRAG-06, PRON-21, VOC-21]
+          - unit: 3
+            title: Meetings and discussions
+            speaking_goal: "Puedo participar activamente en reuniones: interrumpir con cortesía, resumir y acordar acciones."
+            functions: [interrupting, summarizing, agreeing on actions]
+            grammar: [reported speech (introducción), modal verbs for suggestions]
+            l1_focus: [GRAM-11, PRAG-03, PRON-21, VOC-19, VOC-32]
+          - unit: 4
+            title: Hypotheticals and regrets
+            speaking_goal: Puedo hablar de situaciones hipotéticas y de decisiones pasadas y sus consecuencias.
+            functions: [speculating, expressing regret]
+            grammar: [third and mixed conditionals, should have / would have]
+            l1_focus: [GRAM-16, PRON-03, PRON-23]
+          - unit: 5
+            title: Explaining and reporting
+            speaking_goal: Puedo explicar procesos y reportar lo que otras personas dijeron con precisión.
+            functions: [explaining processes, reporting]
+            grammar: [reported speech, passive voice]
+            l1_focus: [GRAM-11, PRON-22, VOC-04, VOC-16]
+          - unit: 6
+            title: Debating complex topics
+            speaking_goal: Puedo sostener un debate sobre temas complejos con matices y contraargumentos.
+            functions: [debating, hedging, contrasting ideas]
+            grammar: [linkers of concession, cleft sentences]
+            l1_focus: [PRAG-06, PRON-21, VOC-01, VOC-13]
+
+  PHA:
+    slug: pharma
+    name: Inglés para la industria farmacéutica (ESP) — Control de Calidad
+    description: >-
+      Ruta de inglés con fines específicos para profesionales de Control de Calidad
+      que atienden auditorías, clientes de maquila y servicios a terceros.
+      Requiere B1 consolidado. Contenido para práctica de idioma; no es guía regulatoria.
+    levels:
+      B2:
+        guided_hours: "Complementaria a GEN B1–B2"
+        focus: Comunicación oral en auditorías, visitas de clientes y llamadas técnicas.
+        units:
+          - unit: 1
+            title: "Hosting an audit: the opening meeting"
+            speaking_goal: Puedo dar la bienvenida a un auditor, presentar al equipo, confirmar agenda y alcance, y explicar la logística de la visita.
+            functions: [welcoming, introducing colleagues, confirming agenda and scope, explaining logistics]
+            grammar: [polite requests and offers, present simple for routines and facts]
+            l1_focus: [PRAG-06, PRAG-07, VOC-04, VOC-21, VOC-33, PRON-05, PRON-18]
+          - unit: 2
+            title: "Lab tour: explaining QC processes"
+            speaking_goal: Puedo guiar un recorrido por el laboratorio y explicar el flujo de muestras y análisis.
+            functions: [describing processes, guiding a tour]
+            grammar: [passive voice, sequencers]
+            l1_focus: [GRAM-01, PRON-05, PRON-18, VOC-11, VOC-31]
+          - unit: 3
+            title: Answering auditor questions
+            speaking_goal: Puedo responder preguntas de auditoría con precisión, pedir aclaración y comprometerme a traer evidencia sin especular.
+            functions: [answering precisely, asking for clarification, buying time]
+            grammar: [indirect questions, present perfect for evidence]
+            l1_focus: [GRAM-03, PRAG-02, PRAG-06, PRON-19, VOC-01]
+          - unit: 4
+            title: "Deviations and CAPA: explaining root cause"
+            speaking_goal: Puedo explicar una desviación, su causa raíz y las acciones correctivas y preventivas de forma clara y ordenada.
+            functions: [narrating an incident, explaining causes, describing actions]
+            grammar: [past simple vs present perfect, cause and effect linkers]
+            l1_focus: [GRAM-08, PRON-13, VOC-13, VOC-21, VOC-24]
+          - unit: 5
+            title: "Closing meeting: responding to findings"
+            speaking_goal: Puedo discutir hallazgos de auditoría, aclarar malentendidos con diplomacia y acordar compromisos y plazos.
+            functions: [discussing findings, disagreeing diplomatically, committing to actions]
+            grammar: [future forms for commitments, hedging]
+            l1_focus: [GRAM-14, PRAG-06, PRON-21, VOC-19]
+          - unit: 6
+            title: Technical calls with clients
+            speaking_goal: Puedo atender una llamada técnica con un cliente sobre especificaciones y resultados, dictando cifras y códigos sin errores.
+            functions: [discussing specifications and results, dictating numbers and codes]
+            grammar: [numbers, units and symbols, indirect questions]
+            l1_focus: [PRAG-08, PRON-18, PRON-22, PRON-24, VOC-27]

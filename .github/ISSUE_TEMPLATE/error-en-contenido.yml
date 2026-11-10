@@ -1,0 +1,37 @@
+name: Error en contenido
+description: Reporta un error en una lección, el catálogo L1 o la documentación.
+title: "[Error] "
+labels: ["error-contenido"]
+body:
+  - type: input
+    id: ubicacion
+    attributes:
+      label: Lección o archivo
+      placeholder: "GEN-A2-U03-L01 o docs/01-interferencias-l1.md"
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de error
+      options:
+        - Transcripción IPA o acento de palabra
+        - Inglés poco natural o incorrecto
+        - Nota contrastiva (español ↔ inglés) incorrecta
+        - Problema cultural o de representación
+        - Errata o formato
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: Qué dice actualmente y por qué es un error.
+    validations:
+      required: true
+  - type: textarea
+    id: correccion
+    attributes:
+      label: Corrección sugerida
+      description: Incluye la fuente (p. ej., Cambridge Dictionary) cuando aplique.

@@ -1,0 +1,46 @@
+name: Nueva lección
+description: Propón una lección para una unidad del currículo.
+title: "[Lección] TRK-NIVEL-Unn-Lnn: título"
+labels: ["leccion"]
+body:
+  - type: dropdown
+    id: track
+    attributes:
+      label: Track
+      options:
+        - GEN · Inglés general comunicativo
+        - PHA · Inglés para la industria farmacéutica (ESP)
+    validations:
+      required: true
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: Nivel MCER
+      options: [A1, A2, B1, B2, C1]
+    validations:
+      required: true
+  - type: input
+    id: unidad
+    attributes:
+      label: Unidad
+      description: Número y título de la unidad en curriculum/syllabus.yml.
+      placeholder: "U02 · My people"
+    validations:
+      required: true
+  - type: textarea
+    id: situacion
+    attributes:
+      label: Situación comunicativa y producto final
+      description: Quién habla con quién, dónde, para qué y qué logra decir el aprendiz al final.
+    validations:
+      required: true
+  - type: input
+    id: l1
+    attributes:
+      label: Códigos L1 propuestos
+      description: Entre 3 y 7 códigos de docs/01-interferencias-l1.md, al menos uno PRON-.
+      placeholder: "GRAM-12, PRON-08, PRON-14, VOC-23"
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas adicionales
